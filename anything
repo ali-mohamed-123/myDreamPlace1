@@ -1,0 +1,102 @@
+<div class="flex justify-center items-center h-screen">
+  <div
+    class="login_Form bg-gray-100 px-4 py-3 border border-gray-300 rounded-xl shadow-md"
+  >
+    <div class="mb-5">
+      <h2 class="text-center text-2xl font-bold">Sign in</h2>
+    </div>
+
+    <div class="mb-3"></div>
+
+    <div class="mb-3">
+      <input
+        type="email"
+        class="bg-gray-100 border border-gray-400 px-2 py-2 w-96 rounded-md outline-none placeholder-gray-400"
+      />
+    </div>
+
+    <div class="mb-5">
+      <input
+        type="password"
+        class="bg-gray-100 border border-gray-400 px-2 py-2 w-96 rounded-md outline-none placeholder-gray-400"
+      />
+    </div>
+
+    <div className="mb-1">
+      <button
+        type="button"
+        class="bg-blue-500 hover:bg-blue w-full text-white text-center py-2 font-bold rounded-md"
+      >
+        Sign in
+      </button>
+      <div class="">Don't have an account?</div>
+    </div>
+  </div>
+</div>
+//////////////////////////////////////////////////////////////////////////////////////
+<div class="absolute -bottom-6 bg-white ml-[28px]">
+  <div class="flex justify-between">
+    <input type="text" placeholder="Where are you going?" />
+    <input type="text" placeholder="Check in date" />
+    <input type="text" placeholder="Check out date" />
+    <input type="number" placeholder="Guests" />
+    <input type="number" placeholder="Rooms" />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-8 rounded"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</div>
+
+/////////////////////////////////////////////////////////////////////////////////
+<v-for> v-for="item in items" :key="item.name"</v-for>
+////////////////////////////////////////////////////////////////////////////////
+<div
+  v-for="item in items"
+  :key="item.name"
+  class="w-[295px] h-[220px] rounded-lg bg-gray-400 mt-[25px]"
+>
+  <img src="../assets/images/photo2.png" alt="" />
+  <div class="mt-[14px] font-bold text-xl">Australia</div>
+  2246 properties
+</div>
+//////////////////////////////////////////////////////////////////////////////////////
+<div
+  class="absolute -bottom-6 ml-[28px] search-inputs-container rounded-[8px] bg-white"
+>
+  <div class="flex justify-between">
+    <input
+      class="bg-gray w-[206px] pt-[11px] pr-[11px] pb-[12px] pl-[12px] text-white"
+      type="text"
+      placeholder="Where are you going?"
+    />
+    <input
+      class="bg-gray-400 w-[206px] pt-[11px] pr-[11px] pb-[12px] pl-[12px]"
+      type="text"
+      placeholder="Check in date"
+    />
+    <input
+      class="bg-gray-400 w-[206px] pt-[11px] pr-[11px] pb-[12px] pl-[12px]"
+      type="text"
+      placeholder="Check out date"
+    />
+    <input
+      class="bg-gray w-[206px] pt-[11px] pr-[11px] pb-[12px] pl-[12px]"
+      type="number"
+      placeholder="Guests"
+    />
+    <input
+      class="bg-gray w-[206px] pt-[11px] pr-[11px] pb-[12px] pl-[12px]"
+      type="number"
+      placeholder="Rooms"
+    />
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-8 rounded"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</div>
